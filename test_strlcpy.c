@@ -10,36 +10,38 @@
 /*																			*/
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include <stdio.h>
 #include <string.h>
 
-char	*ft_strncpy(char*, char*, unsigned int);
+unsigned int	ft_strlcpy(char*, char*, unsigned int);
 
 int	main(void)
 {
-	char	str1[] = "HELLO";
-	char	str2[9] = "WWWWWWWW";
+	char	str1[12] = "ABC";
+	char	str2[9] = "12345678";
 	char *ptr = str2;
 
 	printf("%s ---- %s\n", str1, str2);
-	ft_strncpy(str2, str1, 4);
+	unsigned int n = strlcpy(str2, str1, 3);
 	printf("%s ---- %s\n", str1, str2);
-	printf("\n");
-	printf("%s ---- %s\n", str1, str2);
-	ft_strncpy(str2, str1, 5);
-	printf("%s ---- %s\n", str1, str2);
-	printf("\n");
-	printf("%s ---- %s\n", str1, str2);
-	ft_strncpy(str2, str1, 6);
-	printf("%s ---- %s\n", str1, str2);
-	printf("\n");
-	printf("%s ---- %s\n", str1, str2);
-	ft_strncpy(str2, str1, 7);
-	printf("%s ---- %s\n", str1, str2);
+	// printf("\n");
+	// printf("%s ---- %s\n", str1, str2);
+	// ft_strlcpy(str2, str1, 5);
+	// printf("%s ---- %s\n", str1, str2);
+	// printf("\n");
+	// printf("%s ---- %s\n", str1, str2);
+	// ft_strlcpy(str2, str1, 6);
+	// printf("%s ---- %s\n", str1, str2);
+	// printf("\n");
+	// printf("%s ---- %s\n", str1, str2);
+	// ft_strlcpy(str2, str1, 7);
+	// printf("%s ---- %s\n", str1, str2);
 	int	i = 0;
 	while (i<100){
-		printf("%c",*(ptr+i));
+		write(1,(ptr+i),1);
 		i++;
 	}
+	printf("\nRETURN RESULT: %d", n);
 	return (0);
 }

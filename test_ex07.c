@@ -2,7 +2,7 @@
 
 char	*ft_strupcase(char*);
 
-int main(void)
+int	main(void)
 {
 	char	str1[] = "HELLO5";
 	char	str2[9] = "WWWWW/WWW";

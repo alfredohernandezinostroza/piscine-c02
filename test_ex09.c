@@ -2,7 +2,7 @@
 
 char	*ft_strcapitalize(char*);
 
-int main(void)
+int	main(void)
 {
 	char	str1[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
 	char	str2[9] = "WWWWW/WWW";

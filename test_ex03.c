@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int  ft_str_is_numeric(char*);
+int	 ft_str_is_numeric(char*);
 
-int main(void)
+int	main(void)
 {
 	char	str1[] = "";
 	char	str2[9] = "WWWWW/WWW";

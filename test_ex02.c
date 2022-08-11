@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int  ft_str_is_alpha(char*);
+int	 ft_str_is_alpha(char*);
 
-int main(void)
+int	main(void)
 {
 	char	str1[] = "HELLO5";
 	char	str2[9] = "WWWWW/WWW";
