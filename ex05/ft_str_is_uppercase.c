@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aantonio <aantonio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_lowercase(char *str)
+int ft_str_is_uppercase(char *str)
 {
     int i;
     int only_letters;
@@ -19,7 +19,7 @@ int ft_str_is_lowercase(char *str)
     i = 0;
     while(str[i])
     {
-        if ('a' > str[i] || str[i] > 'z')
+        if ('A' > str[i] || str[i] > 'Z')
         {
             only_letters = 0;
             break;
