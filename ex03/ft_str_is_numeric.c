@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aantonio <aantonio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/11 12:59:26 by aantonio          #+#    #+#             */
-/*   Updated: 2022/08/11 12:59:26 by aantonio         ###   ########.fr       */
+/*   Created: 2022/08/11 13:29:59 by aantonio          #+#    #+#             */
+/*   Updated: 2022/08/11 13:29:59 by aantonio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_alpha(char *str)
+int ft_str_is_numeric(char *str)
 {
     int i;
-    int only_letters;
+    int only_numbers;
 
-    only_letters = 1;
+    only_numbers = 1;
     i = 0;
     while(str[i])
     {
-        if (('a' > str[i] || str[i] > 'z') && ('A' > str[i] || str[i] > 'Z'))
+        if (('0' > str[i] || str[i] > '9'))
         {
-            only_letters = 0;
+            only_numbers = 0;
             break;
         }
         i++;
     }
-    return (only_letters);
+    return (only_numbers);
 }
-
