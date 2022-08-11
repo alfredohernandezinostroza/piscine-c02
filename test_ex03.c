@@ -4,12 +4,12 @@ int  ft_str_is_numeric(char*);
 
 int main(void)
 {
-	char	str1[] = "HELLO5";
+	char	str1[] = "";
 	char	str2[9] = "WWWWW/WWW";
 	char	str3[9] = "123/W3W";
 	char	str4[9] = "12345678";
-	char	str5[10] = "123094";
-	char	str6[9] = "000000a0";
+	char	str5[10] = "";
+	char	str6[9] = "";
 
 	printf("TEST: %d\n", ft_str_is_numeric(str1));
 	printf("TEST: %d\n", ft_str_is_numeric(str2));
